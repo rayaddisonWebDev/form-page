@@ -1,86 +1,155 @@
 <!DOCTYPE html>
+<!--  -->
+<!--  -->
+<!--  -->
+<!-- IMPORTANT NEW GOALS FOR UPDATING THIS WEBSITE -->
+<!-- FINISH THIS SITE TO PERFECTION -->
+<!-- Steps to finishing -->
+<!-- 1. Come up with an appealing style and add it -->
+<!--    1a. have set up as two by two blocks with each item getting a block, then add total at end -->
+<!-- 2. Make it mobile friendly  -->
+<!-- 3. Finishing touches if necessary -->
+<!--  -->
+<!--  -->
+<!--  -->
 <html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>DooDot Purchases</title>
+    <link rel="stylesheet" href="formsite.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="jquery-3.4.1.min (1).js"></script>
+    <!-- <script src="formsite.js" charset="utf-8"></script> -->
+  </head>
 
-<head>
-  <meta charset="utf-8">
-  <title>DooDot Purchases</title>
-  <link rel="stylesheet" href="formsite.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
-  <script src="jquery-3.4.1.min (1).js"></script>
-  <!-- <script src="formsite.js" charset="utf-8"></script> -->
-</head>
+  <body>
+    <nav class="navbar navbar-expand-lg p-3 mb-2 navbar navbar-light">
+      <a class="navbar-brand" href="#">DooDot</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-<body>
-  <nav>
-    <ul class="navigation">
-      <li class="mainpage"><a href="#">DooDot</a></li>
-      <li><a href="#">About Us</a></li>
-      <li><a href="#">Locations</a></li>
-      <li><a href="#">Products</a></li>
-      <li><a href="#">Photo Gallery</a></li>
-    </ul>
-  </nav>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Locations</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#">
+              Products
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Photo Gallery</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
 
-  <img src="" alt="">
+    <form
+      id="totalpurchase"
+      class="container"
+      action="index.html"
+      method="post"
+    >
+      <div class="row">
+        <div id="item" class="gshears">
+          <h3>Garden Shears</h3>
+          <p>Priced at $15.00 per unit</p>
+          <p>Select Quantity:</p>
+          <input
+            class="form-control"
+            id="shears"
+            min="0"
+            type="number"
+            name="gshears"
+            placeholder="0"
+          />
+        </div>
 
+        <div id="item" class="cmilk">
+          <h3>Chocolate Milk</h3>
+          <p>Priced at $6.00 per gallon</p>
+          <p>Select Quantity:</p>
+          <input
+            class="form-control"
+            id="milk"
+            min="0"
+            type="number"
+            name="cmilk"
+            placeholder="0"
+          />
+        </div>
+      </div>
 
-  <form id="totalpurchase" action="index.html" method="post">
+      <div class="row">
+        <div id="item" class="hat">
+          <h3>DooDot Hat</h3>
+          <p>$30.00 per unit</p>
+          <p>Select Quantity:</p>
+          <input
+            class="form-control"
+            id="hat"
+            min="0"
+            type="number"
+            name="hat"
+            placeholder="0"
+          />
+        </div>
 
-    <div class="gshears">
-      <h3>Garden Shears</h3>
-      <p>Priced at $15.00 per unit</p>
-      <p>Select Quantity: </p>
-      <input id="shears" min="0" type="number" name="gshears" placeholder="0">
-    </div>
+        <br />
 
-    <br />
+        <div id="item" class="shipping">
+          <h3>Select State for Delivery</h3>
+          <p>States may apply different rates</p>
+          <select class="form-control" id="states">
+            <option value="">--Select--</option>
+            <option value="ma">MA (2.5% tax)</option>
+            <option value="ct">CT</option>
+            <option value="vt">VT</option>
+            <option value="ri">RI</option>
+            <option value="nh">NH (5.0% tax)</option>
+            <option value="me">ME</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+      </div>
 
-    <div class="cmilk">
-      <h3>Chocolate Milk</h3>
-      <p>Priced at $6.00 per gallon</p>
-      <p>Select Quantity: </p>
-      <input id="milk" min="0" type="number" name="cmilk" placeholder="0">
-    </div>
-
-    <br />
-
-    <div class="hat">
-      <h3>DooDot Hat</h3>
-      <p>$30.00 per unit</p>
-      <p>Select Quantity: </p>
-      <input id="hat" min="0" type="number" name="hat" placeholder="0">
-    </div>
-
-    <br />
-
-    <div class="shipping">
-      <h3>Select State for Delivery</h3>
-      <p>States may apply different rates</p>
-      <select id="states">
-        <option value="">--Select--</option>
-        <option value="ma">MA (2.5% tax)</option>
-        <option value="ct">CT</option>
-        <option value="vt">VT</option>
-        <option value="ri">RI</option>
-        <option value="nh">NH (5.0% tax)</option>
-        <option value="me">ME</option>
-        <option value="other">Other</option>
-      </select>
-    </div>
-    </div>
-    <br />
-
-    <div class="total">
-      <h4>Calculate Total</h4>
-      <!-- <button id="btn-total" type="button" name="button">Submit Total</button> -->
-      <input id="btn-total" type="submit">
-      <p id="total-quantity"></p>
-      <p id="total-field"></p>
-    </div>
-  </form>
-  <script src="formsite.js" charset="utf-8"></script>
-
-
-</body>
-
+      <div id="wholerow" class="row">
+        <div id="item" class="col">
+          <h4>Calculate Total:</h4>
+          <input class="btn btn-dark" id="btn-total" type="submit" />
+        </div>
+        <div id="item" class="col">
+          <p class="text" id="total-quantity"></p>
+          <p class="text" id="total-field"></p>
+        </div>
+      </div>
+    </form>
+    <footer>
+      DooDot Industries. 300 West Forest Way Chiltonville, AR 34412
+    </footer>
+    <script src="formsite.js" charset="utf-8"></script>
+  </body>
 </html>

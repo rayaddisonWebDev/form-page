@@ -1,36 +1,35 @@
 form {
   width: 100%;
-  margin-left: 20px;
+}
+
+nav {
+  background-color: #e3f2fd;
+}
+
+.text {
+  font-size: 1.5rem;
+}
+
+.container {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
+  grid-row-gap: 15px;
 }
 
-/*  list-style-type: none; gets rid of bullets */
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #333;
+#item {
+  flex-basis: 40%;
+  flex-grow: 1;
+  margin: 2rem;
 }
 
-li {
-  float: left;
+#wholerow {
+  min-width: 100%;
 }
 
-li a {
-  display: block;
+footer {
   color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-/* Change the link color to #111 (black) on hover */
-li a:hover {
-  background-color: #111;
-}
-
-div{
-  margin: 1em;
+  background-color: black;
+  height: 40px;
+  padding-left: 7px;
 }
